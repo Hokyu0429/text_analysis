@@ -10,13 +10,17 @@
 
 ---
 
-## Approaches
+## Plan for Today
 
-Constructing metrics for document similarity
+1. Introduction to basic tools of text analysis
+
+2. Live demonstration in Python (Jupyter notebook)
+
+3. Example applications from existing research
 
 ---
 
-## Vectorization
+## Document Vectorization
 
 The fundamental approach here is to turn textual data into numerical data
 
@@ -44,7 +48,7 @@ Common words such as "the", "and", and "of" account for large share of words, wi
 
 ---
 
-## Normalization
+## Frequency Normalization
 
 Not all words are created equal, some are more interesting than others
 - generally the more rare a word is, the more interesting it is
@@ -75,7 +79,7 @@ Mathematically, if we have word vectors $c_1$ and $c_2$, we would calculate the 
 
 ## Computing Similarity
 
-So we get 7, but what does that mean? We need to divide by some baseline to get between 0 and 1
+So we get 7, but what does that mean? We need to divide by some baseline to get it between 0 and 1
 
 Comparing the first (blue) sentence with itself would give 13, while the same for the second (red) sentence is 15, thus the average of 14 seems good
 - then we get $7/14 = 0.5$ for out similarity
@@ -107,7 +111,7 @@ This allows you to both classify and go in reverse to generate synthetic documen
 
 ---
 
-## Tools
+## Popular Tools
 
 The go to language for text analysis today is Python
 
@@ -134,24 +138,26 @@ Or you can have Binder run it for you by clicking below:
 
 ## Wikipedia and Science
 
-In my own research, I use these methods to study the impact of Wikipedia on scientific research
+In my own research, I use document similarity to study the impact of Wikipedia on scientific research
 
 We look at the document similarity between Wikipedia entries and scientific papers before and after publication to see if Wikipedia has some impact
-
 ![timing diagram](images/timing_diagram.svg) <!-- .element class="large" -->
 
 ---
 
 ## Classifying Patents
 
-Patents to Products
-- document clustering
-- document categorization
+In another project, we use document clustering to classify US patents into detailed product types (such as laundry detergent or computer keyboards)
+
+![wiki match](images/wiki_match.svg)
 
 ---
 
-## Other Uses
+## Use Cases
 
----
+Any time you have digitized documents on your hands, these methods can be useful in guiding your analysis
+- the largest benefit comes when you have so many documents that manual analysis is infeasible
 
-## More Resources
+Particularly promising use cases involve cases where you can link text to other data such as geographical or temporal information
+
+Digitization efforts such as Project Gutenberg have proven very successful and the tools for analysis are getting better and easier to use

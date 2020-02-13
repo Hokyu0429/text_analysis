@@ -30,7 +30,7 @@ Any string of words can be turned into a vector by counting up the number occura
 
 Instead of doing just single words, we can also extend this approach to phrases, which are often called **n-grams**, or more generally **tokens**
 
-Popularized by Google's handy Ngram viewer
+Popularized by Google's handy [Ngram Viewer](https://books.google.com/ngrams)
 
 ![google ngram](images/google_ngram.png) <!-- .element class="large" -->
 
@@ -50,8 +50,8 @@ Not all words are created equal, some are more interesting than others
 - generally the more rare a word is, the more interesting it is
 
 A common approach here is to upweight words that are less common
-\\[ w_k = \log\left(\frac{D}{d_k}\right) \\]
-where $d_k$ is the number of documents featuring token $k$ and $D$ is the total number of documents
+\\[ w_k = \frac{1}{f_k} \qquad \text{or} \qquad w_k = \log\left(\frac{1}{f_k}\right) \\]
+where $f_k$ is the fraction of documents featuring token $k$
 
 ---
 
@@ -69,7 +69,7 @@ Mathematically, if we have word vectors $c_1$ and $c_2$, we would calculate the 
 
 ## Similarity Example
 
-![doc_sim](latex/doc_sim.svg) <!-- .element class="large" -->
+![doc_sim](latex/doc_sim.svg) <!-- .element class="medium" -->
 
 ---
 
@@ -100,9 +100,10 @@ Choose a number of groups $k$ (say 5) and this will assign each document to grou
 ## Machine Learning
 
 With machine learning we can do an even better job of classifying documents, but we need big training sets
-- this allows you to both classify and go in reverse to generate synthetic documents (see GPT-2 from OpenAI)
 
-Synth Moby
+This allows you to both classify and go in reverse to generate synthetic documents (see GPT-2 from OpenAI)
+
+![synth moby](images/synth_moby.png) <!-- .element class="medium" -->
 
 ---
 
@@ -131,15 +132,17 @@ Or you can have Binder run it for you by clicking below:
 
 ---
 
-## Case Study 1
+## Wikipedia and Science
 
-Wikipedia
-- document similarity
-- evolution of documents
+In my own research, I use these methods to study the impact of Wikipedia on scientific research
+
+We look at the document similarity between Wikipedia entries and scientific papers before and after publication to see if Wikipedia has some impact
+
+![timing diagram](images/timing_diagram.svg) <!-- .element class="large" -->
 
 ---
 
-## Case Study 2
+## Classifying Patents
 
 Patents to Products
 - document clustering

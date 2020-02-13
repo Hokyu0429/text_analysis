@@ -22,17 +22,17 @@ The fundamental approach here is to turn textual data into numerical data
 
 Any string of words can be turned into a vector by counting up the number occurances of each word
 
-![document vector](images/document_vector.png) <!-- .element class="large" -->
+![document vector](images/document_vector.png) <!-- .element class="medium" -->
 
 ---
 
-## Terminology
+## Words and Phrases
 
-**Token**: a single word or phrase, sometimes called *n-grams* for length "n" phrases
+Instead of doing just single words, we can also extend this approach to phrases, which are often called **n-grams**
 
-**Document**: any piece of text ranging in size from a tweet to an article to an entire book
+Popularized by Google's handy Ngram viewer
 
-**Corpus**: a collection of documents, potentially having some common origin
+![google ngram](images/google_ngram.png) <!-- .element class="medium" -->
 
 ---
 
@@ -47,4 +47,68 @@ where $d_k$ is the number of documents featuring token $k$ and $D$ is the total 
 
 ---
 
-## Words and Phrases
+## Long Tail
+
+Common words such as "the", "and", and "of" account for large share of words, with many rare words in the tail
+
+![freq_dist](images/freq_dist.svg)
+
+---
+
+## Document Similarity
+
+---
+
+## Document Clustering
+
+---
+
+## Word Embeddings
+
+---
+
+## Machine Learning
+
+GPT-2
+
+---
+
+## Tools
+
+Python
+
+NLTK
+
+sklearn
+
+---
+
+## Jupyter Example
+
+---
+
+## Case Study 1
+
+Wikipedia
+- document similarity
+- evolution of documents
+
+---
+
+## Wikipedia Results
+
+---
+
+## Case Study 2
+
+Patents to Products
+- document clustering
+- document categorization
+
+---
+
+## Other Uses
+
+---
+
+## More Resources

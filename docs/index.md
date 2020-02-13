@@ -118,7 +118,16 @@ For a more linguistically oriented word-level analysis, `NLTK` is also very usef
 
 ## Jupyter Example
 
+I'll go through a complete example of using these methods in Python using two sources for documents provided by NLTK
+- 20 classic English language novels
+- the text of all US presidential inauguration speeches
 
+There is one Jupyter notebook that you can run yourself after downloading it from the [Github repo](https://github.com/iamlemec/text_analysis/blob/master/code/text_analysis.ipynb) for this lecture
+
+Or you can have Binder run it for you by clicking below:
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/iamlemec/text_analysis/master?filepath=code%2Ftext_analysis.ipynb)
+<!-- .element style="width: 300px;" -->
 
 ---
 
